@@ -3,10 +3,8 @@ package com.example.petclinic.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Set;
-
 @Getter
 @Setter
-public class Vet extends Person {
-    private Set<Specialiaty> specialiaties;
+public class Specialiaty extends BaseEntity {
+    private String description;
 }
