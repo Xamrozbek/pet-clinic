@@ -17,7 +17,8 @@ public class OwnerController {
 
     @RequestMapping({"", "/", "/index", "/index.html"})
     public String listOwners(Model model) {
-        model.addAttribute("owners", ownerService.fintAll());
+        var list = ownerService.fintAll().stream().sorted((a, b) -> a.getId() > b.getId() ? 1 : 0);
+        model.addAttribute("owners", list);
         return "owner/index";
     }
 }
