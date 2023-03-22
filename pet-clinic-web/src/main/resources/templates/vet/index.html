@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml"
+      th:replace="~{fragments/layout :: layout (~{::body},'vets')}">
 <head>
     <meta charset="UTF-8">
-    <title>Pet Clinic</title>
+    <title>Pet Clinic List of Vets</title>
 </head>
 <body>
 <h1 th:text="'List of Vets'">Vet Page</h1>
-<table>
+<table class="table table-striped">
     <thead>
     <tr>
         <th>Id</th>
-        <th>FirtsName</th>
-        <th>LastName</th>
+        <th>Firts Name</th>
+        <th>Last Name</th>
     </tr>
     </thead>
     <tbody>
