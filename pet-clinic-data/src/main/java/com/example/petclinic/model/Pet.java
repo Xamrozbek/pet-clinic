@@ -13,7 +13,9 @@ public class Pet extends BaseEntity {
 
     private Owner owner;
 
-    private LocalDate birthDay;
+    private LocalDate birthDate;
+
+    private String name;
 
 
 }
