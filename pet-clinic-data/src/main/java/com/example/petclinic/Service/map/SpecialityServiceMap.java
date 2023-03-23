@@ -2,14 +2,14 @@ package com.example.petclinic.Service.map;
 
 import com.example.petclinic.Service.SpecialityService;
 
-import com.example.petclinic.model.Specialiaty;
+import com.example.petclinic.model.Speciality;
 
 import java.util.Set;
 
-public class SpecialityServiceMap extends AbstractMapService<Specialiaty, Long> implements SpecialityService {
+public class SpecialityServiceMap extends AbstractMapService<Speciality, Long> implements SpecialityService {
 
     @Override
-    public Set<Specialiaty> fintAll() {
+    public Set<Speciality> fintAll() {
         return super.findAll();
     }
 
@@ -19,17 +19,17 @@ public class SpecialityServiceMap extends AbstractMapService<Specialiaty, Long> 
     }
 
     @Override
-    public void delete(Specialiaty object) {
+    public void delete(Speciality object) {
         super.delete(object);
     }
 
     @Override
-    public Specialiaty save(Specialiaty object) {
+    public Speciality save(Speciality object) {
         return super.save(object);
     }
 
     @Override
-    public Specialiaty findById(Long id) {
+    public Speciality findById(Long id) {
         return super.findById(id);
     }
 }

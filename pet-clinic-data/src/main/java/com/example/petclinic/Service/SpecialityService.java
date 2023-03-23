@@ -1,6 +1,6 @@
 package com.example.petclinic.Service;
 
-import com.example.petclinic.model.Specialiaty;
+import com.example.petclinic.model.Speciality;
 
-public interface SpecialityService extends CrudService<Specialiaty, Long> {
+public interface SpecialityService extends CrudService<Speciality, Long> {
 }
